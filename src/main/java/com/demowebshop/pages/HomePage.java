@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.io.IOException;
+
 public class HomePage extends ObjectUtility {
     WebDriver driver;
     /**Page Constructor**/
@@ -24,14 +26,17 @@ public class HomePage extends ObjectUtility {
 
     /**User Action Methods**/
 
-    public String getHomePageTitle(){
+    public String getHomePageTitle() throws IOException {
         String title=page.getPageTitle(driver);
-        return  title;
+        String expected= String.valueOf(excel.readDataFromExcel("\\src\\main\\resources\\TestData.xlsx","HomePage"));
+        System.out.println(expected);
+        return title;
     }
     public LoginPage clickOnLoginMenu(){
         page.clickOnElement(loginMenu);
         return new LoginPage(driver);
     }
+
 
 
 }

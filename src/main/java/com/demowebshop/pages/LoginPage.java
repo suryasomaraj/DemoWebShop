@@ -6,6 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.io.IOException;
+import java.util.List;
+
 public class LoginPage extends ObjectUtility {
     WebDriver driver;
     public LoginPage(WebDriver driver){
@@ -33,17 +36,20 @@ public class LoginPage extends ObjectUtility {
         page.enterText(loginEmail,emailId);
 
     }
-    public void enterLoginPassword(String pasword){
-        page.enterText(loginPassword,pasword);
+    public void enterLoginPassword(String password){
+        page.enterText(loginPassword,password);
 
     }
     public MyAccountPage clickOnLoginButton(){
         page.clickOnElement(loginButton);
         return new MyAccountPage(driver);
     }
-
-
-
-
-
+    public List<String> getExpectedExcelData() throws IOException {
+        List<String> expectedData=excel.readDataFromExcel("\\src\\main\\resources\\TestData.xlsx","LoginPage");
+        return expectedData;
+    }
+    public String getLoginPageTitle(){
+        String loginTitle=page.getPageTitle(driver);
+        return loginTitle;
+    }
 }
