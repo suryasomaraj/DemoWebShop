@@ -14,6 +14,9 @@ public class HomePageTest extends Base {
         String expectedTitle="Demo Web Shop";
         Assert.assertEquals(actualTitle,expectedTitle,"Invalid Home Page Title");
     }
+
+
+
   /*  public void verifyPageLogin(){
         home=new HomePage(driver);
         login=home.clickOnLoginMenu();
