@@ -10,7 +10,6 @@ public class HomePageTest extends Base {
     @Test(priority = 2,enabled = true,description = "TC_001_verifyHomePageTitle")
     public void verifyHomePageTitle(){
         home=new HomePage(driver);
-
         String actualTitle= home.getHomePageTitle();
         String expectedTitle="Demo Web Shop";
         Assert.assertEquals(actualTitle,expectedTitle,"Invalid Home Page Title");
