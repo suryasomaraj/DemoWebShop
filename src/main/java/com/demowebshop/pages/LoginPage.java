@@ -44,10 +44,7 @@ public class LoginPage extends ObjectUtility {
         page.clickOnElement(loginButton);
         return new MyAccountPage(driver);
     }
-    public List<String> getExpectedExcelData() throws IOException {
-        List<String> expectedData=excel.readDataFromExcel("\\src\\main\\resources\\TestData.xlsx","LoginPage");
-        return expectedData;
-    }
+
     public String getLoginPageTitle(){
         String loginTitle=page.getPageTitle(driver);
         return loginTitle;

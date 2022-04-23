@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CrossBrowser Suite">
+    <test name="Cross Browser Chrome Test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="http://demowebshop.tricentis.com/"/>
+        <classes>
+            <class name="com.demowebshop.test.HomePageTest">
+                <methods>
+                    <include name="verifyHomePageTitle"/>
+                </methods>
+            </class>
+            <class name="com.demowebshop.test.LoginPageTest">
+                <methods>
+                    <include name="verifyPageLogin"/>
+                    <include name="verifyLoginPageTitle"/>
+                </methods>
+            </class>
+            <class name="com.demowebshop.test.RegisterPageTest">
+                <methods>
+                    <include name="verifyRegistration"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Cross Browser Firefox Test">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="url" value="http://demowebshop.tricentis.com/"/>
+        <classes>
+            <class name="com.demowebshop.test.HomePageTest">
+                <methods>
+                    <include name="verifyHomePageTitle"/>
+                </methods>
+            </class>
+            <class name="com.demowebshop.test.LoginPageTest">
+                <methods>
+                    <include name="verifyPageLogin"/>
+                    <include name="verifyLoginPageTitle"/>
+                </methods>
+            </class>
+            <class name="com.demowebshop.test.RegisterPageTest">
+                <methods>
+                    <include name="verifyRegistration"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

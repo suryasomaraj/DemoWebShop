@@ -1,0 +1,14 @@
+com\demowebshop\pages\RegisterPage.class
+com\demowebshop\Utilities\WaitUtility.class
+com\demowebshop\Utilities\PageUtility.class
+com\demowebshop\pages\MyAccountPage.class
+com\demowebshop\pages\LoginPage.class
+com\demowebshop\Utilities\RandomDataUtility.class
+com\demowebshop\Utilities\ObjectUtility.class
+com\demowebshop\constants\Constants.class
+com\demowebshop\pages\HomePage.class
+com\demowebshop\Utilities\TableUtility.class
+com\demowebshop\Utilities\ExcelUtility.class
+com\demowebshop\automationcore\Base.class
+com\demowebshop\Utilities\WaitUtility$LocatorType.class
+com\demowebshop\Utilities\GenderUtility.class

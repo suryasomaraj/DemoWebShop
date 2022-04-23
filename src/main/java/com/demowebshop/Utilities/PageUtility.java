@@ -136,6 +136,4 @@ public class PageUtility {
             Set<String> windows = driver.getWindowHandles();
             return windows;
         }
-
-
 }

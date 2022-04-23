@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Parameter Suite" duration-ms="45677" started-at="2022-04-23T11:01:44 IST" finished-at="2022-04-23T11:02:29 IST">
+    <groups>
+      <group name="smoke">
+        <method signature="HomePageTest.verifyHomePageTitle()[pri:1, instance:com.demowebshop.test.HomePageTest@6e6c3152]" name="verifyHomePageTitle" class="com.demowebshop.test.HomePageTest"/>
+        <method signature="LoginPageTest.verifyLoginPageTitle()[pri:3, instance:com.demowebshop.test.LoginPageTest@167fdd33]" name="verifyLoginPageTitle" class="com.demowebshop.test.LoginPageTest"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="LoginPageTest.verifyPageLogin()[pri:2, instance:com.demowebshop.test.LoginPageTest@167fdd33]" name="verifyPageLogin" class="com.demowebshop.test.LoginPageTest"/>
+        <method signature="RegisterPageTest.verifyRegistration()[pri:4, instance:com.demowebshop.test.RegisterPageTest@1e965684]" name="verifyRegistration" class="com.demowebshop.test.RegisterPageTest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test name="Parameter Test" duration-ms="45677" started-at="2022-04-23T11:01:44 IST" finished-at="2022-04-23T11:02:29 IST">
+      <class name="com.demowebshop.test.RegisterPageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.demowebshop.test.RegisterPageTest@1e965684]" name="setUp" is-config="true" duration-ms="7580" started-at="2022-04-23T11:02:19 IST" finished-at="2022-04-23T11:02:27 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://demowebshop.tricentis.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyRegistration()[pri:4, instance:com.demowebshop.test.RegisterPageTest@1e965684]" name="verifyRegistration" duration-ms="2321" started-at="2022-04-23T11:02:27 IST" description="TC_001_verifyLoginPageTitle" finished-at="2022-04-23T11:02:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegistration -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demowebshop.test.RegisterPageTest@1e965684]" name="tearDown" is-config="true" duration-ms="90" started-at="2022-04-23T11:02:29 IST" finished-at="2022-04-23T11:02:29 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRegistration status=SUCCESS method=RegisterPageTest.verifyRegistration()[pri:4, instance:com.demowebshop.test.RegisterPageTest@1e965684] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demowebshop.test.RegisterPageTest -->
+      <class name="com.demowebshop.test.HomePageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.demowebshop.test.HomePageTest@6e6c3152]" name="setUp" is-config="true" duration-ms="12343" started-at="2022-04-23T11:01:44 IST" finished-at="2022-04-23T11:01:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://demowebshop.tricentis.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHomePageTitle()[pri:1, instance:com.demowebshop.test.HomePageTest@6e6c3152]" name="verifyHomePageTitle" duration-ms="684" started-at="2022-04-23T11:01:56 IST" description="TC_001_verifyHomePageTitle" finished-at="2022-04-23T11:01:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demowebshop.test.HomePageTest@6e6c3152]" name="tearDown" is-config="true" duration-ms="104" started-at="2022-04-23T11:01:57 IST" finished-at="2022-04-23T11:01:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePageTitle status=SUCCESS method=HomePageTest.verifyHomePageTitle()[pri:1, instance:com.demowebshop.test.HomePageTest@6e6c3152] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demowebshop.test.HomePageTest -->
+      <class name="com.demowebshop.test.LoginPageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.demowebshop.test.LoginPageTest@167fdd33]" name="setUp" is-config="true" duration-ms="11618" started-at="2022-04-23T11:01:57 IST" finished-at="2022-04-23T11:02:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://demowebshop.tricentis.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyPageLogin()[pri:2, instance:com.demowebshop.test.LoginPageTest@167fdd33]" name="verifyPageLogin" duration-ms="2105" started-at="2022-04-23T11:02:09 IST" description="TC_001_verifyPageLogin" finished-at="2022-04-23T11:02:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageLogin -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demowebshop.test.LoginPageTest@167fdd33]" name="tearDown" is-config="true" duration-ms="88" started-at="2022-04-23T11:02:11 IST" finished-at="2022-04-23T11:02:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPageLogin status=SUCCESS method=LoginPageTest.verifyPageLogin()[pri:2, instance:com.demowebshop.test.LoginPageTest@167fdd33] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.demowebshop.test.LoginPageTest@167fdd33]" name="setUp" is-config="true" duration-ms="7938" started-at="2022-04-23T11:02:11 IST" finished-at="2022-04-23T11:02:19 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://demowebshop.tricentis.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginPageTitle()[pri:3, instance:com.demowebshop.test.LoginPageTest@167fdd33]" name="verifyLoginPageTitle" duration-ms="671" started-at="2022-04-23T11:02:19 IST" description="TC_001_verifyLoginPageTitle" finished-at="2022-04-23T11:02:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitle -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demowebshop.test.LoginPageTest@167fdd33]" name="tearDown" is-config="true" duration-ms="72" started-at="2022-04-23T11:02:19 IST" finished-at="2022-04-23T11:02:19 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginPageTitle status=SUCCESS method=LoginPageTest.verifyLoginPageTitle()[pri:3, instance:com.demowebshop.test.LoginPageTest@167fdd33] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demowebshop.test.LoginPageTest -->
+    </test> <!-- Parameter Test -->
+  </suite> <!-- Parameter Suite -->
+</testng-results>

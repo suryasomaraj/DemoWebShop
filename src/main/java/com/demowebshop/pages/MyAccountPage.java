@@ -17,10 +17,17 @@ public class MyAccountPage extends ObjectUtility {
     /**Page Elements**/
     private final String _accountUserName="//div[@class='header-links']//a[@class='account']";
     @FindBy(xpath=_accountUserName) private WebElement accountUserName;
+    private final String _getRegisteredEmail="//div[@class='header-links']//a[@class='account']";
+    @FindBy(xpath=_getRegisteredEmail) private WebElement getRegisteredEmail;
+
 
     /**User Action Methods**/
     public String getUserName(){
         String emailId=page.getElementText(accountUserName);
+        return emailId;
+    }
+    public String getRegisterEmail(){
+        String emailId=page.getElementText(getRegisteredEmail);
         return emailId;
     }
 }
