@@ -2,6 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Smoke suite">
     <test name="Smoke Test" parallel="methods" thread-count="2">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="http://demowebshop.tricentis.com/"/>
         <classes>
             <class name="com.demowebshop.test.HomePageTest">
                 <methods>

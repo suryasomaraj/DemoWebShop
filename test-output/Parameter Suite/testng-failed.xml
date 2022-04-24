@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Parameter Suite]">
+  <test thread-count="5" name="Parameter Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="http://demowebshop.tricentis.com/"/>
+    <classes>
+      <class name="com.demowebshop.test.LoginPageTest">
+        <methods>
+          <include name="verifyLoginPageTitle"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyPageLogin"/>
+        </methods>
+      </class> <!-- com.demowebshop.test.LoginPageTest -->
+      <class name="com.demowebshop.test.RegisterPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyRegistration"/>
+        </methods>
+      </class> <!-- com.demowebshop.test.RegisterPageTest -->
+    </classes>
+  </test> <!-- Parameter Test(failed) -->
+</suite> <!-- Failed suite [Parameter Suite] -->
